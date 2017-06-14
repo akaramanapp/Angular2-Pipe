@@ -4,10 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { Pipe, PipeTransform } from '@angular/core';
+import { ExponentialStrengthPipe } from './exponential-strength.pipe'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExponentialStrengthPipe
   ],
   imports: [
     BrowserModule,
